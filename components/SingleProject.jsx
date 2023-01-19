@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
+import Head from "next/head";
 
 export default function SingleProject({title, description, skills, featuredImage, gallery, link}) {
 
@@ -9,6 +10,12 @@ export default function SingleProject({title, description, skills, featuredImage
      
   return (
     <main>
+      <Head>
+        <title>{title} | Project</title>
+        <meta name="description" content={`Read more about my project: ${title} here.`} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href={"/logo-grey.svg"} />
+      </Head>
       <h1 className="text-center bg-gray-200 p-4">{title}</h1>
       <section className="grid lg:grid-cols-2 py-12 px-8 gap-4">
         <article>
