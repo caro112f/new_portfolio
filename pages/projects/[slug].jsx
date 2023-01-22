@@ -1,5 +1,5 @@
 import { getSlugData, getSingleProjectData } from "../../queries";
-import SingleProject from "../../components/SingleProject";
+import SingleProject from "../../components/site-layout/SingleProject";
 
 export default function ProjektSingleview({data}) {
   return (

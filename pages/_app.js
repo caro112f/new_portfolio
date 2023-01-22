@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Nav from '../components/Nav';
-import PageWrapper from '../components/PageWrapper';
+import Nav from '../components/site-layout/Nav';
+import PageWrapper from '../components/site-layout/PageWrapper';
 import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {

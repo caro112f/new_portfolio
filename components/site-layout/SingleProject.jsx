@@ -46,7 +46,7 @@ export default function SingleProject({title, description, skills, featuredImage
         </Link>
       </div>
 
-      <section className="grid lg:grid-cols-4 grid-rows-1 gap-4 py-6">
+      <section className="grid lg:grid-cols-4 grid-rows-1 gap-4 py-6 max-w-[1200px] m-auto">
         {gallery.map((object, index) => (
           <div key={object.responsiveImage.src} className={`${index === 1 ? "col-start-4 row-end-1" : "col-start-1 col-end-4 row-end-1"}}`}>
             <Image
