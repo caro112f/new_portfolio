@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Project from '../components/Project'
 import AboutMe from '../components/sections/AboutMe';
+import SplashSection from '../components/sections/SplashSection';
 import TechStack from '../components/sections/TechStack';
 import { getProjectData } from '../queries';
 
@@ -16,9 +17,12 @@ export default function Home({data}) {
         <link rel="icon" href={"/logo-grey.svg"} />
       </Head>
       <main>
+        <SplashSection />
         <AboutMe />
         <TechStack />
-        <section id="projects" className="max-w-[1600px] m-auto md:py-10 py-6">
+        <section id="projects" className="max-w-[1600px] m-auto py-10 pt-20 md:pt-32 bg-[#fefefe]">
+          <h2 className="text-center pt-10">My projects</h2>
+          <hr className=" w-60 md:w-96 m-auto border-rose-800 border-[1.5px] mb-10 md:mb-20 rounded"></hr>
           {data.map((p, index) => (
             <article key={p.id}>
               <Project {...p} index={index} />

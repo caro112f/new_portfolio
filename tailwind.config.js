@@ -14,6 +14,7 @@ module.exports = {
     },
     extend: {
       fontSize: {
+        xlwh1: "6.209rem",
         wh1: "4.209rem",
         wh2: "3.157rem",
         wh3: "2.369rem",
@@ -21,11 +22,12 @@ module.exports = {
         wh5: "1.333rem",
         sh6: "1.2rem",
         base: "1rem",
-        mh1: "2.488rem",
+        mh1: "4.488rem",
         mh2: "2.074rem",
         mh3: "1.728rem",
         mh4: "1.44rem",
         mh5: "1.2rem",
+        xxs: "0.8rem"
       },
     },
   },

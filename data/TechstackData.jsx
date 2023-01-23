@@ -1,5 +1,5 @@
 import { TbBrandNextjs } from "react-icons/tb"
-import { FaReact, FaSass, FaGithub, FaFigma, FaTrello } from "react-icons/fa";
+import { FaReact, FaGithub, FaFigma, FaTrello } from "react-icons/fa";
 import { SiAntdesign, SiTailwindcss, SiTypescript, SiChakraui, SiNetlify, SiDatabricks, SiAdobeillustrator, SiSass, SiWordpress, SiNpm } from "react-icons/si";
 import { DiScrum } from "react-icons/di"
 
@@ -76,7 +76,7 @@ export const techstack = [
     id: 12,
     title: "NPM",
     logo: <SiNpm size={40} color={color} />,
-    level: 4,
+    level: 3,
   },
   {
     id: 13,
