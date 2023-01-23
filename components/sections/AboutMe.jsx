@@ -1,5 +1,6 @@
 import Image from "next/image";
 import profileimg from "../../assets/me_square.png"
+
 export default function AboutMe() {
   return (
     <section id="aboutme" className="flex justify-center">
