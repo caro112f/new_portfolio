@@ -19,9 +19,9 @@ export default function SingleProject({title, description, skills, featuredImage
       </Head>
       <div className="bg-gray-200 p-4 relative">
         <Link href={"/#projects"}>
-          <IoIosArrowBack size={40} className="hover:cursor-pointer absolute top-2 left-4" />
+          <IoIosArrowBack size={40} className="hover:cursor-pointer absolute top-1 left-1 md:top-4 md:left-4" />
         </Link>
-        <h1 className="text-center">{title}</h1>
+        <h1 className="text-center py-4 pt-8">{title}</h1>
       </div>
       <section className="grid lg:grid-cols-2 py-12 px-8 gap-4 max-w-[1300px] m-auto">
         <article>
@@ -59,7 +59,7 @@ export default function SingleProject({title, description, skills, featuredImage
 
       <div className="text-white bg-rose-900 py-4 flex justify-center">
         <Link href={link}>
-          <p className="m-auto w-[10rem] flex align-middle items-center gap-2 hover:gap-4 ease-out duration-300 hover:cursor-pointer">
+          <p className="m-auto flex align-middle items-center gap-2 hover:gap-4 ease-out duration-300 hover:cursor-pointer">
             Go to site
             <HiOutlineArrowNarrowRight />
           </p>
