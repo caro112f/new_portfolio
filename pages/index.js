@@ -22,7 +22,7 @@ export default function Home({data}) {
         <TechStack />
         <section id="projects" className="max-w-[1600px] m-auto py-10 pt-20 md:pt-32 bg-[#fefefe]">
           <h2 className="text-center pt-10">My projects</h2>
-          <hr className=" w-60 md:w-96 m-auto border-rose-800 border-[1.5px] mb-10 md:mb-20 rounded"></hr>
+          <hr className=" w-60 md:w-96 m-auto border-rose-800 border-[1.5px] mt-4 mb-10 md:mb-20 rounded"></hr>
           {data.map((p, index) => (
             <article key={p.id}>
               <Project {...p} index={index} />

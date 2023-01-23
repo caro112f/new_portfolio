@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -8,10 +10,10 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    fontFamily: {
-      sans: ["Work Sans,sans-serif"],
-      serif: ["Anton,sans-serif"],
-    },
+    // fontFamily: {
+    //   sans: ["Work,sans-serif"],
+    //   serif: ["Oswald,sans-serif"],
+    // },
     extend: {
       fontSize: {
         xlwh1: "6.209rem",
