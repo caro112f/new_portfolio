@@ -3,20 +3,25 @@ import NextLink from "next/link"
 import Link from "next/link";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
-export default function Project({ slug, title, date, featuredImage, description}) {
+export default function Project({ slug, title, date, featuredImage, description, index}) {
+
 
   const img = featuredImage.responsiveImage;
 
-  let checker = () => {
-    if (title === "Foxholm" | title === "Hacked Hogwarts") return "lg:col-start-2 lg:row-end-1 rounded-l-md"
+  let gridchecker = () => {
+    if (index === 1 | index === 3 | index === 5) return "lg:col-start-2 lg:row-end-1 rounded-l-md"
     else return "lg:col-start-1 lg:row-end-1 rounded-r-md"
   }
 
-
+  let oddchecker = () => {
+    if (index === 1 | index === 3 | index === 5) return true;
+    else return false;
+  }
+  
   return (
     <section className="text-black grid lg:grid-cols-2 py-6">
-      <div className={`${checker()} bg-gray-100 p-8 shadow-md`}>
-        <div className="max-w-[700px] m-auto">
+      <div className={`${gridchecker()} bg-gray-100 p-8 shadow-md md:flex ${oddchecker() === true ? "md:justify-start" : "md:justify-end"}`}>
+        <div className={`max-w-[700px] m-auto`}>
           <p>{date}</p>
           <h2>{title}</h2>
           {description.map((d) => (

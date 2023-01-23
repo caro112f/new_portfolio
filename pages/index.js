@@ -19,9 +19,9 @@ export default function Home({data}) {
         <AboutMe />
         <TechStack />
         <section id="projects" className="max-w-[1600px] m-auto md:py-10 py-6">
-          {data.map((p) => (
+          {data.map((p, index) => (
             <article key={p.id}>
-              <Project {...p} />
+              <Project {...p} index={index} />
             </article>
           ))}
         </section>

@@ -1,6 +1,6 @@
 import { TbBrandNextjs } from "react-icons/tb"
 import { FaReact, FaSass, FaGithub, FaFigma, FaTrello } from "react-icons/fa";
-import { SiAntdesign, SiTailwindcss, SiTypescript, SiChakraui, SiNetlify, SiAdobephotoshop, SiSass, SiWordpress, SiNpm } from "react-icons/si";
+import { SiAntdesign, SiTailwindcss, SiTypescript, SiChakraui, SiNetlify, SiDatabricks, SiAdobeillustrator, SiSass, SiWordpress, SiNpm } from "react-icons/si";
 import { DiScrum } from "react-icons/di"
 
 const color = "#881337";
@@ -56,36 +56,48 @@ export const techstack = [
   },
   {
     id: 9,
+    title: "REST API",
+    logo: <SiDatabricks size={40} color={color} />,
+    level: 3,
+  },
+  {
+    id: 10,
     title: "Github",
     logo: <FaGithub size={40} color={color} />,
     level: 4,
   },
   {
-    id: 10,
+    id: 11,
     title: "Netlify",
     logo: <SiNetlify size={40} color={color} />,
     level: 4,
   },
   {
-    id: 11,
+    id: 12,
     title: "NPM",
     logo: <SiNpm size={40} color={color} />,
     level: 4,
   },
   {
-    id: 12,
+    id: 13,
     title: "Figma",
     logo: <FaFigma size={40} color={color} />,
     level: 3,
   },
   {
-    id: 13,
+    id: 14,
+    title: "Illustrator",
+    logo: <SiAdobeillustrator size={40} color={color} />,
+    level: 2,
+  },
+  {
+    id: 15,
     title: "Scrum",
     logo: <DiScrum size={40} color={color} />,
     level: 3,
   },
   {
-    id: 14,
+    id: 16,
     title: "Trello",
     logo: <FaTrello size={40} color={color} />,
     level: 3,
