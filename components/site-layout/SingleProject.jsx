@@ -4,10 +4,7 @@ import {HiOutlineArrowNarrowRight, HiOutlineArrowUturnLeft} from "react-icons/hi
 import {IoIosArrowBack} from "react-icons/io"
 import Head from "next/head";
 
-export default function SingleProject({title, description, skills, featuredImage, gallery, link}) {
-
-     const img = featuredImage.responsiveImage;
-
+export default function SingleProject({title, description, skills, gallery, link}) {
      
   return (
     <main>

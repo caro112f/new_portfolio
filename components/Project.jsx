@@ -1,5 +1,4 @@
 import Image from "next/image";
-import NextLink from "next/link"
 import Link from "next/link";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { motion } from "framer-motion";

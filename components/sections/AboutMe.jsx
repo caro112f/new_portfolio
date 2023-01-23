@@ -4,7 +4,7 @@ import profileimg from "../../assets/me_square.png"
 export default function AboutMe() {
   return (
     <section id="aboutme" className="flex justify-center">
-      <div className="bg-gray-100 shadow-md rounded-md grid lg:grid-cols-5 gap-0 m-auto max-w-[1200px] p-6 md:p-10 my-20 mx-4">
+      <div className="bg-gray-100 shadow-md rounded-md grid lg:grid-cols-5 gap-0 m-auto max-w-[1300px] p-6 md:p-10 my-20 mx-4">
         <div className="relative lg:col-start-1 lg:col-end-3 min-h-[22rem] w-[100%]">
           <Image src={profileimg} layout="fill" alt="profil" objectFit="contain" />
         </div>

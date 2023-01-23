@@ -8,7 +8,7 @@ export default function TechStack() {
         <h2>My professional toolbox</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-10 md:gap-16 max-w-[1200px] m-auto place-content-center py-10 md:py-20">
           {techstack.map((entry, index) => (
-            <motion.div key={entry.id} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 * index }} viewport={{ once: true }}>
+            <motion.div key={entry.id} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.2 * index }} viewport={{ once: true }}>
               <article className="flex flex-col items-center gap-2">
                 {entry.logo}
                 <h5 className="text-center">{entry.title}</h5>
