@@ -50,7 +50,7 @@ export const techstack = [
   },
   {
     id: 8,
-    title: "Wordpress",
+    title: "WordPress",
     logo: <SiWordpress size={40} color={color} />,
     level: 3,
   },
@@ -100,6 +100,6 @@ export const techstack = [
     id: 16,
     title: "Trello",
     logo: <FaTrello size={40} color={color} />,
-    level: 3,
+    level: 4,
   },
 ];
