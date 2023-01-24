@@ -12,7 +12,7 @@ export default function AboutMe() {
           <h2>About me</h2>
           <p className="pb-2">
             I am a newly graduated multimedia designer from Copenhagen School of Design and Technology. I have 2 years of study-related experience with design and development of User Interfaces, especially websites.
-            Furthermore, I have gained some insights into User Experience, analytical business models, content, and specific technologies. In my various case projects with real world companies, I have also developed
+            Furthermore, I have gained some insights into User Experience, analytical business models, content, and specific technologies. Through my various projects with real world companies, I have also developed
             skills in user testing and project planning as well as teamwork. As my studies progressed, I have specialized further in Frontend development and become comfortable with fetching and using data via REST. In
             most of my projects I have worked with an agile approach to ensure the best result.
           </p>

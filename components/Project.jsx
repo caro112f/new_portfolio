@@ -26,7 +26,7 @@ export default function Project({ slug, title, date, featuredImage, description,
         <div className={`${gridchecker()} bg-gray-100 p-8 shadow-md md:flex ${oddchecker() === true ? "md:justify-start" : "md:justify-end"}`}>
           <div className={`max-w-[700px] m-auto`}>
             <p>{date}</p>
-            <h3>{title}</h3>
+            <h3 className="pb-1">{title}</h3>
             {description.map((d) => (
               <article key={d.id} className="max-w-[700px] lg:max-w-[600px] pb-4">
                 <h4 className="pb-2">{d.heading}</h4>
