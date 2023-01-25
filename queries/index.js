@@ -79,6 +79,8 @@ export async function getSingleProjectData(slug) {
     slug
     skills
     link
+    githubLink
+    priority
     id
     gallery {
       responsiveImage {

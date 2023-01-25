@@ -4,7 +4,7 @@ import {HiOutlineArrowNarrowRight, HiOutlineArrowUturnLeft} from "react-icons/hi
 import {IoIosArrowBack} from "react-icons/io"
 import Head from "next/head";
 
-export default function SingleProject({title, description, skills, gallery, link}) {
+export default function SingleProject({title, description, skills, gallery, link, githubLink}) {
      
   return (
     <>
@@ -61,6 +61,14 @@ export default function SingleProject({title, description, skills, gallery, link
               <HiOutlineArrowNarrowRight />
             </p>
           </Link>
+          {githubLink === "" ? null : (
+            <Link href={githubLink}>
+              <p className="m-auto flex align-middle items-center gap-2 hover:gap-4 ease-out duration-300 hover:cursor-pointer">
+                Go to GitHub
+                <HiOutlineArrowNarrowRight />
+              </p>
+            </Link>
+          )}
         </div>
       </main>
     </>
