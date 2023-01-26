@@ -60,14 +60,14 @@ export default function SingleProject({title, description, skills, gallery, link
         </section>
         <div className="text-white bg-rose-900 py-4 mb-20 flex justify-center">
           <Link href={link}>
-            <p className={`md:w-[10rem] m-auto flex align-middle items-center gap-2 hover:gap-4 ease-out duration-300 hover:cursor-pointer`}>
+            <p className={` md:w-[10rem] m-auto flex align-middle items-center gap-2 md:hover:gap-4 ease-out duration-300 hover:cursor-pointer`}>
               Go to site
               <HiOutlineArrowNarrowRight  />
             </p>
           </Link>
           {githubLink === "" ? null : (
             <Link href={githubLink}>
-              <p className={`md:w-[10rem] m-auto flex align-middle items-center gap-2 hover:gap-4 ease-out duration-300 hover:cursor-pointer`}>
+              <p className={`md:w-[10rem] m-auto flex align-middle items-center gap-2 md:hover:gap-4 ease-out duration-300 hover:cursor-pointer`}>
                 Go to GitHub
                 <HiOutlineArrowNarrowRight  />
               </p>
