@@ -6,8 +6,8 @@ import Head from "next/head";
 import { useState } from "react";
 
 export default function SingleProject({title, description, skills, gallery, link, githubLink}) {
-    const [activeOne, setActiveOne] = useState(null);
-    const [activeTwo, setActiveTwo] = useState(null);
+    const [activeOne, setActiveOne] = useState(false);
+    const [activeTwo, setActiveTwo] = useState(false);
   return (
     <>
       <Head>
@@ -58,16 +58,16 @@ export default function SingleProject({title, description, skills, gallery, link
         </section>
         <div className="text-white bg-rose-900 py-4 mb-20 flex justify-center">
           <Link href={link}>
-            <p onMouseOver={() => setActiveOne(!activeOne)} onMouseLeave={() => setActiveOne(!activeOne)} className={`m-auto flex align-middle items-center gap-2   hover:cursor-pointer`}>
+            <p onMouseOver={() => setActiveOne(!activeOne)} onMouseOut={() => setActiveOne(!activeOne)} className={`m-auto flex align-middle items-center gap-2   hover:cursor-pointer`}>
               Go to site
-              <HiOutlineArrowNarrowRight className={`${activeOne ? "translate-x-1 ease-out duration-300" : "translate-x[-1] ease-out duration-300"} `} />
+              <HiOutlineArrowNarrowRight className={`${activeOne ? "translate-x-1 ease-in-out duration-300" : "translate-x-[-1] ease-in-out duration-300"} `} />
             </p>
           </Link>
           {githubLink === "" ? null : (
             <Link href={githubLink}>
-              <p onMouseOver={() => setActiveTwo(!activeTwo)} onMouseLeave={() => setActiveTwo(!activeTwo)} className={`m-auto flex align-middle items-center gap-2 hover:cursor-pointer`}>
+              <p onMouseOver={() => setActiveTwo(!activeTwo)} onMouseOut={() => setActiveTwo(!activeTwo)} className={`m-auto flex align-middle items-center gap-2 hover:cursor-pointer`}>
                 Go to GitHub
-                <HiOutlineArrowNarrowRight className={`${activeTwo ? "translate-x-1 ease-out duration-300" : "translate-x[-1] ease-out duration-300"} `} />
+                <HiOutlineArrowNarrowRight className={`${activeTwo ? "translate-x-1 ease-in-out duration-300" : "translate-x-[-1] ease-in-out duration-300"} `} />
               </p>
             </Link>
           )}
