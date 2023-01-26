@@ -18,7 +18,9 @@ return (
   <header className="sticky z-30 top-0">
     <nav className={`flex p-[16px] md:px-8 md:py-0 justify-between items-center bg-gray-100 shadow-md`}>
       <Link href="/">
-        <Image className="hover:cursor-pointer" src={"/logo.svg"} alt="logo" height={50} width={50} />
+        <a>
+          <Image className="hover:cursor-pointer" src={"/logo.svg"} alt="logo" height={50} width={50} />
+        </a>
       </Link>
       <div onClick={() => setNavActive(!navActive)} className={`flex flex-col gap-y-[6px] cursor-pointer md:hidden`}>
         <div className={` ${divCss} ${navActive ? "translate-y-[12px] rotate-[45deg]" : ""}`}></div>

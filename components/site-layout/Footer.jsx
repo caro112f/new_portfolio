@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import {AiOutlineMail} from "react-icons/ai"
+import { AiOutlineMail } from "react-icons/ai"
 
 export default function Footer() {
   return (
@@ -23,14 +23,18 @@ export default function Footer() {
         <div className="flex flex-col gap-4 md:items-center">
           <h6>Social links:</h6>
           <ul className="grid gap-4">
-            <li>
+            <li className="hover:cursor-pointer">
               <Link href={"https://github.com/caro112f"}>
-                <FaGithub size={40} className="hover:cursor-pointer" />
+                <a>
+                  <FaGithub size={40} />
+                </a>
               </Link>
             </li>
-            <li>
+            <li className="hover:cursor-pointer">
               <Link href={"https://www.linkedin.com/in/caroline-holm-nielsen-ab8568231/"}>
-                <FaLinkedin size={40} className="hover:cursor-pointer" />
+                <a>
+                  <FaLinkedin size={40} />
+                </a>
               </Link>
             </li>
           </ul>

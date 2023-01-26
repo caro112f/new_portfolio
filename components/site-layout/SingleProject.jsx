@@ -11,14 +11,17 @@ export default function SingleProject({title, description, skills, gallery, link
   return (
     <>
       <Head>
-        <title>{title} | Project</title>
+        <title>{title}</title>
+        {console.log(title)}
         <meta name="description" content={`Read more about my project: ${title} here.`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={"/logo-grey.svg"} />
       </Head>
       <div className="p-4 relative">
         <Link href={"/#projects"}>
-          <IoIosArrowBack size={40} className="hover:cursor-pointer absolute top-1 left-1 md:top-4 md:left-4" />
+          <a>
+            <IoIosArrowBack size={40} className="hover:cursor-pointer absolute top-1 left-1 md:top-4 md:left-4" />
+          </a>
         </Link>
         <h1 className="text-center py-4 pt-8">{title}</h1>
       </div>
