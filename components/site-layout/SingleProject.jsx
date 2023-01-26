@@ -3,9 +3,11 @@ import Link from "next/link";
 import {HiOutlineArrowNarrowRight, HiOutlineArrowUturnLeft} from "react-icons/hi"
 import {IoIosArrowBack} from "react-icons/io"
 import Head from "next/head";
+import { useState } from "react";
 
 export default function SingleProject({title, description, skills, gallery, link, githubLink}) {
-     
+    const [activeOne, setActiveOne] = useState(null);
+    const [activeTwo, setActiveTwo] = useState(null);
   return (
     <>
       <Head>
@@ -56,16 +58,16 @@ export default function SingleProject({title, description, skills, gallery, link
         </section>
         <div className="text-white bg-rose-900 py-4 mb-20 flex justify-center">
           <Link href={link}>
-            <p className="m-auto flex align-middle items-center gap-2 hover:gap-4 ease-out duration-300 hover:cursor-pointer">
+            <p onMouseOver={() => setActiveOne(!activeOne)} onMouseLeave={() => setActiveOne(!activeOne)} className={`m-auto flex align-middle items-center gap-2   hover:cursor-pointer`}>
               Go to site
-              <HiOutlineArrowNarrowRight />
+              <HiOutlineArrowNarrowRight className={`${activeOne ? "translate-x-1 ease-out duration-300" : "translate-x[-1] ease-out duration-300"} `} />
             </p>
           </Link>
           {githubLink === "" ? null : (
             <Link href={githubLink}>
-              <p className="m-auto flex align-middle items-center gap-2 hover:gap-4 ease-out duration-300 hover:cursor-pointer">
+              <p onMouseOver={() => setActiveTwo(!activeTwo)} onMouseLeave={() => setActiveTwo(!activeTwo)} className={`m-auto flex align-middle items-center gap-2 hover:cursor-pointer`}>
                 Go to GitHub
-                <HiOutlineArrowNarrowRight />
+                <HiOutlineArrowNarrowRight className={`${activeTwo ? "translate-x-1 ease-out duration-300" : "translate-x[-1] ease-out duration-300"} `} />
               </p>
             </Link>
           )}

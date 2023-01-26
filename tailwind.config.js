@@ -29,7 +29,10 @@ module.exports = {
         mh3: "1.728rem",
         mh4: "1.44rem",
         mh5: "1.2rem",
-        xxs: "0.8rem"
+        xxs: "0.8rem",
+      },
+      colors: {
+        sections: "#EAE7E4",
       },
     },
   },
