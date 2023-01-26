@@ -10,9 +10,11 @@ export default function SplashSection() {
         <span className="text-rose-800 md:text-xlwh1">Portfolio</span>
         <span className="text-sh6 font-sans text-end">Frontend Developer</span>
       </h1>
-      <div className='m-auto mt-20 animate-bounce'>
+      <div className="m-auto mt-20 animate-bounce">
         <Link href={"/#aboutme"}>
-          <IoIosArrowDown size={45} />
+          <a>
+            <IoIosArrowDown size={45} />
+          </a>
         </Link>
       </div>
     </section>
