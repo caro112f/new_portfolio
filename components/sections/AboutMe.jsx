@@ -11,17 +11,14 @@ export default function AboutMe() {
         <article className="max-w-[700px] border-t-4 pt-8 lg:pt-0 lg:border-t-0 lg:border-l-4 border-rose-800 lg:pl-10 lg:col-start-3 lg:col-end-6 grid gap-2">
           <h2>About me</h2>
           <p className="pb-2">
-            I am a newly graduated multimedia designer from Copenhagen School of Design and Technology. I have 2 years of study-related experience with design and development of User Interfaces, especially websites.
-            Furthermore, I have gained some insights into User Experience, analytical business models, content, and specific technologies. Through my various projects with real world companies, I have also developed
-            skills in user testing and project planning as well as teamwork. As my studies progressed, I have specialized further in Frontend development and become comfortable with fetching and using data via REST. In
+            I am a graduated multimedia designer from Copenhagen School of Design and Technology. I have experience with design and development of User Interfaces, where I have utilized User Experience principles, analytical business models, experimented with content creation and used a wide range of technological tools. Through my various projects with real world companies, I have also developed
+            skills in user testing and project planning as well as teamwork. As my studies progressed, I specialized further in Frontend development and gained experience with frontend tools such as React, Next, Typescript, Vue, SASS, Tailwind and many more. In
             most of my projects I have worked with an agile approach to ensure the best result.
           </p>
           <h3>Motivations</h3>
           <p>
-            3 years ago, I thought I was supposed to work in the humanitarian field - either as a sociologist, anthropologist or psychiatrist. I had never imagined myself becoming any type of software developer, and I
-            had never written any code before. I chose multimedia design because I liked that it was hands on and also creative. I thought that I would for sure like the design part better than the coding. But through
-            some initial tears and frustrations I came to really appreciate the art of frontend development. I found that time did not exist for me when I became immersed in the work and found such satisfaction in seeing
-            the results. Furthermore, it fueled my motivation to feel how much I could develop my skills in short time and become more confident - making the whole proces even more fun.{" "}
+            I chose multimedia design because I liked that it was both practical and creative. I thought that immersing myself in the creative processes would be my favourite part of the study, but the satisfaction I gained from writing succesful code was unmatched. I found that time did not exist for me when I became engaged in the work, and seeing
+            the results only fueled my passion more. It was also a great motivation for me to see how much I could develop my skills in very short time and therefore gain more confidence and enjoyment.{" "}
           </p>
         </article>
       </div>

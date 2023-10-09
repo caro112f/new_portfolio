@@ -37,7 +37,7 @@ export default function SingleProject({title, description, skills, gallery, link
             <div className="flex gap-6 flex-wrap pb-4">
               {skills.map((d) => (
                 <div key={d.id} className="bg-gray-200 p-2 items-center rounded shadow-md">
-                  <h5 className="">{d.title}</h5>
+                  <h5>{d.title}</h5>
                 </div>
               ))}
             </div>
